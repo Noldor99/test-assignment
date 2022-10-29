@@ -1,0 +1,43 @@
+body
+  // height: 100%
+
+.intro
+  margin-bottom: 140px
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  background: url(./image/background-1024.webp) no-repeat center
+  background-size: cover
+  max-width: 1170px
+  margin: 0 auto
+  margin-bottom: 140px
+  @media screen and (max-width: 768px)
+    background: url('./image/background-768.webp') no-repeat center
+    background-size: cover
+  @media screen and (max-width: 500px)
+    background: url('./image/background-360.webp') no-repeat center
+    background-size: cover
+  &__container
+    flex: 1 1 auto
+    display: flex
+    text-align: center
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 16px
+    .intro__body
+      max-width: 380px
+      margin: 0 auto
+    .intro__titlle
+      color: #FFFFFF
+      font-size: 40px
+      line-height: 40px
+      padding-bottom: 21px
+
+    .intro__text
+
+      font-size: 16px
+      line-height: 26px
+      text-align: center
+      color: #FFFFFF
+      padding-bottom: 32px

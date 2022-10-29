@@ -1,0 +1,34 @@
+@import './../../styles/variables.sass'
+
+.getrequest
+  max-width: $w_max
+  margin: 0 auto
+  padding: 0 $sidePadding + px
+  h2
+    color: rgba(0, 0, 0, 0.87)
+    font-size: 40px
+    line-height: 40px
+    text-align: center
+    padding-bottom: 50px
+  &__container
+    display: grid
+    justify-items: center
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 30px
+    padding-bottom: 50px
+
+    @media screen and (max-width: 800px)
+      grid-template-columns: 1fr 1fr
+      grid-gap: 16px
+    @media screen and (max-width: 480px)
+      grid-template-columns: 1fr
+  &__btn
+    display: flex
+    justify-content: center
+    padding-bottom: 140px
+
+.page__end
+  background: #3037a1
+
+.page__center
+  margin: 0 auto

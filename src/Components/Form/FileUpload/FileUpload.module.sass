@@ -1,0 +1,32 @@
+
+.drop-container
+  display: flex
+  padding-bottom: 54px
+  position: relative
+  &:hover .drop-title
+    color: #222
+
+.drop-title
+  font-weight: 400
+  font-size: 16px
+  line-height: 26px
+  border: 1px solid rgba(0, 0, 0, 0.87)
+  border-radius: 4px 0px 0px 4px
+  padding: 14px
+  height: 54px
+
+.upload__input
+  width: 350px
+  max-width: 100%
+  border: 1px solid #D0CFCF
+  border-radius: 0px 4px 4px 0px
+  padding: 14px
+  height: 54px
+
+.upload__input::file-selector-button
+  display: none
+
+.FileUploadError
+  position: absolute
+  bottom: 26px
+  left: 20px

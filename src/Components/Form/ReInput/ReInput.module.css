@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+
+p{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7E7E7E;
+  margin-top: 4px;
+  margin-left: 20px;
+}
+
+.error{
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #CB3D40;
+}
+
+.inputBox{
+  position: relative;
+  padding-top: 50px;
+}
+.inputBox input{
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #D0CFCF;
+  background: #F8F8F8;
+  border-radius: 4px;
+  outline: none;
+  /* color: #000000de; */
+  font-size: 16px;
+  line-height: 26px;
+  transition: 0.5s;
+}
+
+
+
+.inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 15px;
+  pointer-events: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* color: #7E7E7E; */
+  transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+  /* color: #7E7E7E; */
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #F8F8F8;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+ 
